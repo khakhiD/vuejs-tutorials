@@ -1,11 +1,11 @@
 <!-- 리스트 렌더링 -->
 <script setup>
-import { reactive, ref } from 'vue';
+import { ref } from 'vue';
 
 let id = 0;
 
 const newTodo = ref('');
-const todos = reactive([
+const todos = ref([
   { id: id++, text: 'HTML 배우기' },
   { id: id++, text: 'JavaScript 배우기' },
   { id: id++, text: 'Vue 배우기' },
@@ -17,7 +17,7 @@ function addTodo() {
 }
 
 function removeTodo(todo) {
-  todos.value = todos.value.filter((t) => t !== todo);
+  todos.value = todos.value.filter((v) => v.id !== todo.id);
 }
 </script>
 
