@@ -23,8 +23,8 @@ function removeTodo(todo) {
 
 <template>
   <form @submit.prevent="addTodo">
-    <input v-model="newTodo" required placeholder="new todo" />
-    <button>할 일 추가</button>
+    <input v-model="newTodo" required placeholder="New Todo" />
+    <button>Add Todo</button>
   </form>
   <ul>
     <li v-for="todo in todos" :key="todo.id">
