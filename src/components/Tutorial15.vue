@@ -11,11 +11,11 @@ showConfetti();
 </script>
 
 <template>
-  <h1 @click="showConfetti">🎉 축하합니다!</h1>
+  <h2 @click="showConfetti">🎉 축하합니다!</h2>
 </template>
 
 <style>
-h1 {
+h2 {
   text-align: center;
   cursor: pointer;
   margin-top: 3em;

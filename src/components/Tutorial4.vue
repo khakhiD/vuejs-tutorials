@@ -10,6 +10,15 @@ function increment() {
 
 <template>
   <!-- v-on 디렉티브의 축약어 @ -->
-  <button @click="increment">숫자 세기: {{ count }}</button>
+  <button @click="increment" class="btn">숫자 세기: {{ count }}</button>
   <!-- == v-on:click="increment" -->
 </template>
+
+<style lang="css" scoped>
+.btn {
+  min-width: 300px;
+  background-color: #fff;
+  font-weight: bold;
+  color: black;
+}
+</style>

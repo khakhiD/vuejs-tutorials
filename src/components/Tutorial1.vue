@@ -1,4 +1,3 @@
 <template>
-  <h1>Hi Vue!</h1>
+  <h2>Hi Vue!</h2>
 </template>
-<script setup></script>

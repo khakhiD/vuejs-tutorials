@@ -27,6 +27,9 @@ function removeTodo(todo) {
 </script>
 
 <template>
+  <button @click="hideCompleted = !hideCompleted">
+    {{ hideCompleted ? 'Show All' : 'Hide Completed' }}
+  </button>
   <form @submit.prevent="addTodo">
     <input v-model="newTodo" required placeholder="New Todo" />
     <button>Add Todo</button>
@@ -38,9 +41,6 @@ function removeTodo(todo) {
       <button @click="removeTodo(todo)">X</button>
     </li>
   </ul>
-  <button @click="hideCompleted = !hideCompleted">
-    {{ hideCompleted ? 'Show All' : 'Hide Completed' }}
-  </button>
 </template>
 
 <style>
